@@ -1,0 +1,817 @@
+<!DOCTYPE html><html lang="en"><head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Reiro</title>
+		<meta name="HandheldFriendly" content="True">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,350;0,9..144,680;1,9..144,350;1,9..144,680&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,350;0,9..144,680;1,9..144,350;1,9..144,680&display=swap">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<link rel="stylesheet" type="text/css" href="css/screen.css">
+		<style>
+:root {
+	--font-family-one: 'Fraunces', serif;
+	--font-weight-one-light: 350;
+	--font-weight-one-bold: 680;
+}
+</style>
+
+		<script>
+		/* getContrast.js
+		––––––––––––––––––––––––––––––––––––––––––––––––––––
+		Website : vanillajstoolkit.com/helpers/getcontrast/
+		Authors : Chris Ferdinandi & Brian Suda
+		License : MIT
+		–––––––––––––––––––––––––––––––––––––––––––––––––––– */
+		function getContrast(t){"use strict";return"#"===t.slice(0,1)&&(t=t.slice(1)),3===t.length&&(t=t.split("").map(function(t){return t+t}).join("")),(299*parseInt(t.substr(0,2),16)+587*parseInt(t.substr(2,2),16)+114*parseInt(t.substr(4,2),16))/1000>=128?"no-white-text":"is-white-text"}
+		</script>
+		<meta name="description" content="A minimal, functional theme for running a paid-membership publication on Ghost.">
+    <link rel="canonical" href="https://reiro.fueko.net/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="next" href="https://reiro.fueko.net/page/2/">
+    
+    <meta property="og:site_name" content="Reiro">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Reiro">
+    <meta property="og:description" content="A minimal, functional theme for running a paid-membership publication on Ghost.">
+    <meta property="og:url" content="https://reiro.fueko.net/">
+    <meta property="og:image" content="images/kim-daniels-P2qImp_Mr2Y-unsplash_1.jpg">
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Reiro">
+    <meta name="twitter:description" content="A minimal, functional theme for running a paid-membership publication on Ghost.">
+    <meta name="twitter:url" content="https://reiro.fueko.net/">
+    <meta name="twitter:image" content="https://reiro.fueko.net/content/images/2022/10/kim-daniels-P2qImp_Mr2Y-unsplash.jpg">
+    <meta name="twitter:site" content="@fuekothemes">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="798">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Reiro",
+        "url": "https://reiro.fueko.net/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://reiro.fueko.net/content/images/2022/10/reiro.svg"
+        }
+    },
+    "url": "https://reiro.fueko.net/",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://reiro.fueko.net/content/images/2022/10/kim-daniels-P2qImp_Mr2Y-unsplash.jpg",
+        "width": 1200,
+        "height": 798
+    },
+    "mainEntityOfPage": "https://reiro.fueko.net/",
+    "description": "A minimal, functional theme for running a paid-membership publication on Ghost."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.87">
+    <link rel="alternate" type="application/rss+xml" title="Reiro" href="https://reiro.fueko.net/rss/">
+    <script defer="" src="js/portal.min.js" data-i18n="false" data-ghost="https://reiro.fueko.net/" data-key="3d825fc0e10091ccd9cd5c1f35" data-api="https://reiro.fueko.net/ghost/api/content/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style><script async="" src="https://js.stripe.com/v3/"></script>
+    <script defer="" src="js/sodo-search.min.js" data-key="3d825fc0e10091ccd9cd5c1f35" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://reiro.fueko.net/" crossorigin="anonymous"></script>
+    
+    <link href="https://reiro.fueko.net/webmentions/receive/" rel="webmention">
+    <script defer="" src="js/cards.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/cards.min.css">
+    <script defer="" src="js/comment-counts.min.js" data-ghost-comments-counts-api="https://reiro.fueko.net/members/api/comments/counts/"></script>
+    <script defer="" src="js/member-attribution.min.js"></script><style>:root {--ghost-accent-color: #f9c345;}</style>
+    <style>:root body{--opacity-cover:15%}</style>
+<style>body.is-scroll-banner .is-banner{bottom:30px}.is-banner{font-size:24px;position:fixed;z-index:9999;right:2%;bottom:-100px;display:inline-block;padding:2px 10px;transition-timing-function:ease;transition-duration:.5s;transition-property:bottom,transform;color:#171822;border-radius:100px;background-color:#97fe65}.is-banner,.is-banner:hover{color:#171822}.is-banner:hover{transform:translateY(-3px)}@media (max-width:1024px){.is-banner{display:none!important}}</style>
+	</head>
+	<body class="home-template">
+		<script>!function(){"use strict";const t=document.body,o=getComputedStyle(t).getPropertyValue("--ghost-accent-color").trim();o&&t.classList.add(getContrast(o))}();</script>
+		<div class="global-wrap">
+			<div class="global-cover" style="background-image:url(images/kim-daniels-P2qImp_Mr2Y-unsplash.jpg)"></div>
+
+			<div class="global-content">
+				<header class="header-section">
+	<div class="header-wrap">
+		<div class="header-logo global-logo is-header">	<a href="https://reiro.fueko.net" class="is-logo"><img src="images/reiro.svg" alt="Reiro home"></a>
+</div>
+		<div class="header-nav">
+			<span class="header-search search-open is-mobile" data-ghost-search=""><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.877 18.456l5.01 5.011c.208.197.484.308.771.308a1.118 1.118 0 00.809-1.888l-5.011-5.01c3.233-4.022 2.983-9.923-.746-13.654l-.291-.29a.403.403 0 00-.095-.075C13.307-.77 7.095-.649 3.223 3.223c-3.997 3.998-3.997 10.489 0 14.485 3.731 3.731 9.633 3.981 13.654.748zm-.784-13.617a7.96 7.96 0 010 11.254 7.961 7.961 0 01-11.253 0 7.96 7.96 0 010-11.254 7.961 7.961 0 0111.253 0z"></path></svg>
+</span>
+			<input id="toggle" class="header-checkbox" type="checkbox">
+			<label class="header-toggle" for="toggle">
+				<span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</span>
+			</label>
+			<nav>
+<ul>
+	<li><a href="https://fueko.net/themes/reiro/">Demos</a></li>
+	<li><a href="https://reiro.fueko.net/style-guide/">Style Guide</a></li>
+	<li><a href="https://reiro.fueko.net/membership/">Membership</a></li>
+	<li class="is-dropdown">
+		<span><svg role="img" viewBox="0 0 20 4" xmlns="http://www.w3.org/2000/svg"><path d="M2 4A2 2 0 102.001.001 2 2 0 002 4zm8 0a2 2 0 10.001-3.999A2 2 0 0010 4zm8 0a2 2 0 10.001-3.999A2 2 0 0018 4z"></path></svg></span>
+		<ul>
+			<li><a href="https://reiro.fueko.net/featured/">Editor’s Choice</a></li>
+			<li><a href="https://reiro.fueko.net/features/">Features</a></li>
+			<li><a href="https://reiro.fueko.net/tags/">Tags</a></li>
+			<li><a href="https://reiro.fueko.net/authors/">Authors</a></li>
+			<li><a href="https://reiro.fueko.net/subscribe/">Subscribe</a></li>
+			<li><a href="https://reiro.fueko.net/contact/">Contact</a></li>
+			<li><a href="https://themeforest.net/item/reiro-multipurpose-ghost-blog-theme/40287312">Get Theme</a></li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<li class="header-search search-open is-desktop" data-ghost-search=""><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m16.822 18.813 4.798 4.799c.262.248.61.388.972.388.772-.001 1.407-.637 1.407-1.409 0-.361-.139-.709-.387-.971l-4.799-4.797c3.132-4.108 2.822-10.005-.928-13.756l-.007-.007-.278-.278a.6985.6985 0 0 0-.13-.107C13.36-1.017 7.021-.888 3.066 3.067c-4.088 4.089-4.088 10.729 0 14.816 3.752 3.752 9.65 4.063 13.756.93Zm-.965-13.719c2.95 2.953 2.95 7.81 0 10.763-2.953 2.949-7.809 2.949-10.762 0-2.951-2.953-2.951-7.81 0-10.763 2.953-2.95 7.809-2.95 10.762 0Z"></path></svg>
+</li>
+	<li class="signin"><a href="https://reiro.fueko.net/signin/">Sign in</a></li>
+<li class="signup"><a href="https://reiro.fueko.net/membership/" class="global-button">Become a subscriber</a></li>
+</ul>
+</nav>
+		</div>
+	</div>
+</header>				<main class="global-main">
+					<div class="hero-section">
+	<div class="hero-wrap global-padding">
+		<h1 class="hero-title global-title"><span>Hey, we’re Reiro.</span> We promote positive culture through <span>inspiring articles</span> on health, design, and web.</h1>
+		<div class="hero-search is-flat" data-ghost-search="">
+	<span>Search posts, tags and authors</span><span class="global-dynamic-color"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m16.822 18.813 4.798 4.799c.262.248.61.388.972.388.772-.001 1.407-.637 1.407-1.409 0-.361-.139-.709-.387-.971l-4.799-4.797c3.132-4.108 2.822-10.005-.928-13.756l-.007-.007-.278-.278a.6985.6985 0 0 0-.13-.107C13.36-1.017 7.021-.888 3.066 3.067c-4.088 4.089-4.088 10.729 0 14.816 3.752 3.752 9.65 4.063 13.756.93Zm-.965-13.719c2.95 2.953 2.95 7.81 0 10.763-2.953 2.949-7.809 2.949-10.762 0-2.951-2.953-2.951-7.81 0-10.763 2.953-2.95 7.809-2.95 10.762 0Z"></path></svg>
+</span>
+</div>
+			</div>
+</div><div class="widget-section global-padding">
+	<small class="global-subtitle">Popular tags</small>
+	<div class="widget-wrap is-tags">
+		<a href="/tag/idea/" class="item global-image-orientation global-radius">
+	<h2 class="item-title">Idea</h2>
+	<div class="widget-image global-image">
+		<picture>
+	<source srcset="images/photo-1655721529468-d0d81b2dc489_1.jpeg 300w" sizes="300px" type="image/webp">
+	<img srcset="images/photo-1655721529468-d0d81b2dc489.jpeg 300w" sizes="300px" src="images/photo-1655721529468-d0d81b2dc489.jpeg" alt="">
+</picture>	</div>
+</a>
+		<a href="/tag/lifestyle/" class="item global-image-orientation global-radius">
+	<h2 class="item-title">Lifestyle</h2>
+	<div class="widget-image global-image">
+		<picture>
+	<source srcset="images/photo-1557704595-ecd34dc3a4b9_1.jpeg 300w" sizes="300px" type="image/webp">
+	<img srcset="images/photo-1557704595-ecd34dc3a4b9.jpeg 300w" sizes="300px" src="images/photo-1557704595-ecd34dc3a4b9.jpeg" alt="">
+</picture>	</div>
+</a>
+		<a href="/tag/design/" class="item global-image-orientation global-radius">
+	<h2 class="item-title">Design</h2>
+	<div class="widget-image global-image">
+		<picture>
+	<source srcset="images/photo-1611486212557-88be5ff6f941_1.jpeg 300w" sizes="300px" type="image/webp">
+	<img srcset="images/photo-1611486212557-88be5ff6f941.jpeg 300w" sizes="300px" src="images/photo-1611486212557-88be5ff6f941.jpeg" alt="">
+</picture>	</div>
+</a>
+		<a href="/tag/health/" class="item global-image-orientation global-radius">
+	<h2 class="item-title">Health</h2>
+	<div class="widget-image global-image">
+		<picture>
+	<source srcset="images/photo-1657299170129-858a7f31a794_1.jpeg 300w" sizes="300px" type="image/webp">
+	<img srcset="images/photo-1657299170129-858a7f31a794.jpeg 300w" sizes="300px" src="images/photo-1657299170129-858a7f31a794.jpeg" alt="">
+</picture>	</div>
+</a>
+		<a href="/tag/interior/" class="item global-image-orientation global-radius">
+	<h2 class="item-title">Interior</h2>
+	<div class="widget-image global-image">
+		<picture>
+	<source srcset="images/photo-1631679706909-1844bbd07221_1.jpeg 300w" sizes="300px" type="image/webp">
+	<img srcset="images/photo-1631679706909-1844bbd07221.jpeg 300w" sizes="300px" src="images/photo-1631679706909-1844bbd07221.jpeg" alt="">
+</picture>	</div>
+</a>
+		<a href="/tag/eco/" class="item global-image-orientation global-radius">
+	<h2 class="item-title">Eco</h2>
+	<div class="widget-image global-image">
+		<picture>
+	<source srcset="images/vonvix-mYc0ivMNvCI-unsplash_1.jpg 300w" sizes="300px" type="image/webp">
+	<img srcset="images/vonvix-mYc0ivMNvCI-unsplash.jpg 300w" sizes="300px" src="images/vonvix-mYc0ivMNvCI-unsplash.jpg" alt="">
+</picture>	</div>
+</a>
+		<a href="/tag/review/" class="item global-image-orientation global-radius">
+	<h2 class="item-title">Review</h2>
+	<div class="widget-image global-image">
+		<picture>
+	<source srcset="images/photo-1627463869605-48fbcda8253b_1.jpeg 300w" sizes="300px" type="image/webp">
+	<img srcset="images/photo-1627463869605-48fbcda8253b.jpeg 300w" sizes="300px" src="images/photo-1627463869605-48fbcda8253b.jpeg" alt="">
+</picture>	</div>
+</a>
+	</div>
+</div>
+<div class="loop-section global-padding">
+	<small class="global-subtitle">What’s new?</small>
+	<div class="loop-wrap is-top">
+		<article class="item is-top is-first">
+	<a href="/the-trick-to-getting-more-done-is-to-have-the-freedom-to-roam-around/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1657299156379-9edd28706711_3.jpeg 300w, images/photo-1657299156379-9edd28706711_4.jpeg 600w, images/photo-1657299156379-9edd28706711_5.jpeg 1600w" sizes="(max-width:480px) 300px, (max-width:768px) 600px, 1600px" type="image/webp">
+	<img srcset="images/photo-1657299156379-9edd28706711_1.jpeg 300w, images/photo-1657299156379-9edd28706711_2.jpeg 600w, images/photo-1657299156379-9edd28706711.jpeg 1600w" sizes="(max-width:480px) 300px, (max-width:768px) 600px, 1600px" src="images/photo-1657299156379-9edd28706711.jpeg" loading="lazy" alt="The trick to getting more done is to have the freedom to roam around">
+</picture>
+	</a>
+	<div class="item-content">
+		<div class="item-tags global-tags">
+			<a href="/tag/lifestyle/">Lifestyle</a><a href="/tag/eco/">Eco</a><a href="/tag/health/">Health</a>
+		</div>
+		<h2 class="item-title"><a href="/the-trick-to-getting-more-done-is-to-have-the-freedom-to-roam-around/">The trick to getting more done is to have the freedom to roam around</a></h2>
+		<p class="item-excerpt global-excerpt">
+			Vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis augue, imperdiet at sodales. Nullam felis libero, congue quis ipsum et, lacinia maximus eros. Vestibulum ante ipsum primis in faucibus.
+		</p>
+				<div class="global-meta is-full-meta">
+	<div class="global-meta-wrap">
+		<div>
+			<a href="/author/breana/" class="global-meta-avatar is-image global-image">
+				<picture>
+	<source srcset="images/andrea-ba-bMAbzit4DYk-unsplash_1.jpg 300w" sizes="300px" type="image/webp">
+	<img srcset="images/andrea-ba-bMAbzit4DYk-unsplash.jpg 300w" sizes="300px" src="images/andrea-ba-bMAbzit4DYk-unsplash.jpg" loading="lazy" alt="Breana Flatley">
+</picture>			</a>
+			<a href="/author/damian/" class="global-meta-avatar is-image global-image">
+				<picture>
+	<source srcset="images/sander-weeteling-dq7Wlq_evnc-unsplash_1.jpg 300w" sizes="300px" type="image/webp">
+	<img srcset="images/sander-weeteling-dq7Wlq_evnc-unsplash.jpg 300w" sizes="300px" src="images/sander-weeteling-dq7Wlq_evnc-unsplash.jpg" loading="lazy" alt="Damian Erdman">
+</picture>			</a>
+		</div>
+	</div>
+	<div class="global-meta-content">
+		<div>
+			by
+			<a href="/author/breana/">Breana Flatley</a> & <a href="/author/damian/">Damian Erdman</a>
+		</div>
+		<time datetime="2022-10-07"><span>October 7, 2022 ∙ </span>4 min read</time>
+	</div>
+</div>
+	</div>
+</article>
+			<div class="subscribe-form global-radius">
+		<div class="global-dynamic-color">
+			<small class="global-subtitle">Newsletter</small>
+			<h3 class="subscribe-title">Get all the latest posts delivered straight to your inbox.</h3>
+		</div>
+		<div class="subscribe-wrap">
+			<form data-members-form="subscribe" data-members-autoredirect="false">
+				<input data-members-email="" type="email" placeholder="Your email address" aria-label="Your email address" required="">
+				<button class="global-button no-color" type="submit">Subscribe</button>
+			</form>
+			<div class="subscribe-alert global-dynamic-color">
+				<span class="alert-loading global-alert">Processing your application</span>
+				<span class="alert-success global-alert">Please check your inbox and click the link to confirm your subscription.</span>
+				<span class="alert-error global-alert">There was an error sending the email</span>
+			</div>
+		</div>
+	</div>
+		<article class="item is-top">
+	<a href="/ai-can-solve-new-problems-very-easily/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1519923834699-ef0b7cde4712_4.jpeg 300w, images/photo-1519923834699-ef0b7cde4712_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1519923834699-ef0b7cde4712_2.jpeg 300w, images/photo-1519923834699-ef0b7cde4712_1.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1519923834699-ef0b7cde4712_1.jpeg" loading="lazy" alt="AI can solve new problems very easily">
+</picture>
+	</a>
+	<div class="item-content">
+		<div class="item-tags global-tags">
+			<a href="/tag/idea/">Idea</a><a href="/tag/app/">App</a>
+		</div>
+		<h2 class="item-title"><a href="/ai-can-solve-new-problems-very-easily/">AI can solve new problems very easily</a></h2>
+		<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/daryl/">Daryl Wehner</a>
+	</div>
+</div>
+	</div>
+</article>
+		<article class="item is-top">
+	<a href="/there-are-still-many-questions-left-to-answer/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1645731504303-860e0da74fee_2.jpeg 300w, images/photo-1645731504303-860e0da74fee_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1645731504303-860e0da74fee_1.jpeg 300w, images/photo-1645731504303-860e0da74fee.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1645731504303-860e0da74fee.jpeg" loading="lazy" alt="There are still many questions left to answer">
+</picture>
+	</a>
+	<div class="item-content">
+		<div class="item-tags global-tags">
+			<a href="/tag/idea/">Idea</a><a href="/tag/design/">Design</a>
+		</div>
+		<h2 class="item-title"><a href="/there-are-still-many-questions-left-to-answer/">There are still many questions left to answer</a></h2>
+		<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/damian/">Damian Erdman</a>
+	</div>
+</div>
+	</div>
+</article>
+	</div>
+	<small class="global-subtitle">Featured posts</small>
+<div class="featured-section global-radius is-gray-accent">
+	<div class="global-cover is-featured" style="background-image:url(images/photo-1519923834699-ef0b7cde4712.jpeg)"></div>
+
+
+	<small class="featured-subtitle">Editor’s Choice</small>
+	<h2 class="featured-title">Get started with our best stories</h2>
+	<div class="featured-content items-3 global-dynamic-color">
+		<article class="item">
+	<a href="/ai-can-solve-new-problems-very-easily/" class="global-link" aria-label="AI can solve new problems very easily"></a>
+	<a href="/ai-can-solve-new-problems-very-easily/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1519923834699-ef0b7cde4712_4.jpeg 300w, images/photo-1519923834699-ef0b7cde4712_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1519923834699-ef0b7cde4712_2.jpeg 300w, images/photo-1519923834699-ef0b7cde4712_1.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1519923834699-ef0b7cde4712_1.jpeg" loading="lazy" alt="AI can solve new problems very easily">
+</picture>
+	</a>
+	<div class="item-content">
+		<h2 class="item-title"><a href="/ai-can-solve-new-problems-very-easily/">AI can solve new problems very easily</a></h2>
+		<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/daryl/">Daryl Wehner</a>
+	</div>
+</div>
+	</div>
+</article>
+		<article class="item">
+	<a href="/a-healthy-outside-starts-from-the-inside/" class="global-link" aria-label="A healthy outside starts from the inside"></a>
+	<a href="/a-healthy-outside-starts-from-the-inside/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1559056390-e18db56c3d77_2.jpeg 300w, images/photo-1559056390-e18db56c3d77_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1559056390-e18db56c3d77_1.jpeg 300w, images/photo-1559056390-e18db56c3d77.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1559056390-e18db56c3d77.jpeg" loading="lazy" alt="A healthy outside starts from the inside">
+</picture>
+	</a>
+	<div class="item-content">
+		<h2 class="item-title"><a href="/a-healthy-outside-starts-from-the-inside/">A healthy outside starts from the inside</a></h2>
+		<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/daryl/">Daryl Wehner</a>
+	</div>
+</div>
+	</div>
+</article>
+		<article class="item">
+	<a href="/its-a-new-era-in-design-there-are-no-rules/" class="global-link" aria-label="It’s a new era in design, there are no rules"></a>
+	<a href="/its-a-new-era-in-design-there-are-no-rules/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1606937493317-c6af200ca039_2.jpeg 300w, images/photo-1606937493317-c6af200ca039_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1606937493317-c6af200ca039_1.jpeg 300w, images/photo-1606937493317-c6af200ca039.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1606937493317-c6af200ca039.jpeg" loading="lazy" alt="It’s a new era in design, there are no rules">
+</picture>
+	</a>
+	<div class="item-content">
+		<h2 class="item-title"><a href="/its-a-new-era-in-design-there-are-no-rules/">It’s a new era in design, there are no rules</a></h2>
+		<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/breana/">Breana Flatley</a> & <a href="/author/daryl/">Daryl Wehner</a>
+	</div>
+</div>
+	</div>
+</article>
+	</div>
+	<div class="featured-button-wrap">
+		<a href="https://reiro.fueko.net/featured/" class="featured-button">See all featured posts →</a>
+	</div>
+</div>
+	<small class="loop-subtitle global-subtitle">Previous posts</small>
+	<div class="loop-wrap">
+		<article class="item">
+	<a href="/we-are-stronger-as-a-group-than-an-individual/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1642698335353-c7866176c8ee_2.jpeg 300w, images/photo-1642698335353-c7866176c8ee_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1642698335353-c7866176c8ee_1.jpeg 300w, images/photo-1642698335353-c7866176c8ee.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1642698335353-c7866176c8ee.jpeg" loading="lazy" alt="We are stronger as a group than an individual">
+</picture>
+	</a>
+	<div class="item-content">
+		<div class="item-tags global-tags">
+			<a href="/tag/lifestyle/">Lifestyle</a><a href="/tag/eco/">Eco</a><a href="/tag/health/">Health</a>
+		</div>
+		<h2 class="item-title"><a href="/we-are-stronger-as-a-group-than-an-individual/">We are stronger as a group than an individual</a></h2>
+		<p class="item-excerpt global-excerpt">
+			Nullam auctor nisi non tortor porta, id dapibus lectus rhoncus. Vivamus lobortis posuere enim finibus sodales. Phasellus quis tellus scelerisque, sagittis tortor et, maximus metus.
+		</p>
+				<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/damian/">Damian Erdman</a>
+	</div>
+</div>
+	</div>
+</article>
+		<article class="item">
+	<a href="/every-day-in-every-city-and-town-across-the-country/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1600607686527-6fb886090705_2.jpeg 300w, images/photo-1600607686527-6fb886090705_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1600607686527-6fb886090705_1.jpeg 300w, images/photo-1600607686527-6fb886090705.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1600607686527-6fb886090705.jpeg" loading="lazy" alt="Every day, in every city and town across the country">
+</picture>
+	</a>
+	<div class="item-content">
+		<div class="item-tags global-tags">
+			<a href="/tag/interior/">Interior</a><a href="/tag/lifestyle/">Lifestyle</a><a href="/tag/design/">Design</a>
+		</div>
+		<h2 class="item-title"><a href="/every-day-in-every-city-and-town-across-the-country/">Every day, in every city and town across the country</a></h2>
+		<p class="item-excerpt global-excerpt">
+			Morbi a facilisis lectus. Ut eu dapibus risus, a interdum justo. Vestibulum volutpat velit ac tellus mollis, sit amet sodales metus elementum. Aliquam eu mi massa. Proin suscipit enim a pulvinar viverra.
+		</p>
+				<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/damian/">Damian Erdman</a> & <a href="/author/breana/">Breana Flatley</a>
+	</div>
+</div>
+	</div>
+</article>
+		<article class="item">
+	<a href="/i-believe-the-world-is-one-big-family/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1606787364410-947e10173148_2.jpeg 300w, images/photo-1606787364410-947e10173148_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1606787364410-947e10173148_1.jpeg 300w, images/photo-1606787364410-947e10173148.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1606787364410-947e10173148.jpeg" loading="lazy" alt="I believe the world is one big family">
+</picture>
+	</a>
+	<div class="item-content">
+		<div class="item-tags global-tags">
+			<small class="global-dynamic-color">Paid-members</small>
+<a href="/tag/lifestyle/">Lifestyle</a><a href="/tag/health/">Health</a>
+		</div>
+		<h2 class="item-title"><a href="/i-believe-the-world-is-one-big-family/">I believe the world is one big family</a></h2>
+		<p class="item-excerpt global-excerpt">
+			Integer nec mi cursus, blandit est et, auctor mauris. Aenean ex metus, faucibus in mattis at, tincidunt eu dolor. Cras hendrerit massa nec augue placerat rutrum. Sed facilisis massa enim, ac tempus diam elementum sit amet.
+		</p>
+				<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/breana/">Breana Flatley</a>
+	</div>
+</div>
+	</div>
+</article>
+		<article class="item">
+	<a href="/a-healthy-outside-starts-from-the-inside/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1559056390-e18db56c3d77_2.jpeg 300w, images/photo-1559056390-e18db56c3d77_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1559056390-e18db56c3d77_1.jpeg 300w, images/photo-1559056390-e18db56c3d77.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1559056390-e18db56c3d77.jpeg" loading="lazy" alt="A healthy outside starts from the inside">
+</picture>
+	</a>
+	<div class="item-content">
+		<div class="item-tags global-tags">
+			<small class="global-dynamic-color">Members</small>
+<a href="/tag/lifestyle/">Lifestyle</a><a href="/tag/review/">Review</a>
+		</div>
+		<h2 class="item-title"><a href="/a-healthy-outside-starts-from-the-inside/">A healthy outside starts from the inside</a></h2>
+		<p class="item-excerpt global-excerpt">
+			Quae in controversiam veniunt, de iis, si placet, disseramus. Iam quae corporis sunt, ea nec auctoritatem cum animi partibus. Duo enim genera quae erant, fecit tria. Et quod est munus, quod opus sapientiae.
+		</p>
+				<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/daryl/">Daryl Wehner</a>
+	</div>
+</div>
+	</div>
+</article>
+		<article class="item">
+	<a href="/everyone-has-a-different-life-story/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1664324830476-a9867ac0619f_2.jpeg 300w, images/photo-1664324830476-a9867ac0619f_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1664324830476-a9867ac0619f_1.jpeg 300w, images/photo-1664324830476-a9867ac0619f.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1664324830476-a9867ac0619f.jpeg" loading="lazy" alt="Everyone has a different life story">
+</picture>
+	</a>
+	<div class="item-content">
+		<div class="item-tags global-tags">
+			<a href="/tag/idea/">Idea</a><a href="/tag/design/">Design</a>
+		</div>
+		<h2 class="item-title"><a href="/everyone-has-a-different-life-story/">Everyone has a different life story</a></h2>
+		<p class="item-excerpt global-excerpt">
+			Non est igitur summum malum dolor. Tu autem inter haec tantam multitudinem hominum interiectam non vides nec laetantium nec dolentium. Nunc vero a primo quidem mirabiliter occulta natura est nec perspici nec cognosci potest.
+		</p>
+				<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/breana/">Breana Flatley</a>
+	</div>
+</div>
+	</div>
+</article>
+		<article class="item">
+	<a href="/look-at-life-with-the-eyes-of-a-child/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1580377968154-e234b38fcf9d_2.jpeg 300w, images/photo-1580377968154-e234b38fcf9d_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1580377968154-e234b38fcf9d_1.jpeg 300w, images/photo-1580377968154-e234b38fcf9d.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1580377968154-e234b38fcf9d.jpeg" loading="lazy" alt="Look at life with the eyes of a child">
+</picture>
+	</a>
+	<div class="item-content">
+		<div class="item-tags global-tags">
+			<a href="/tag/health/">Health</a><a href="/tag/interior/">Interior</a><a href="/tag/idea/">Idea</a>
+		</div>
+		<h2 class="item-title"><a href="/look-at-life-with-the-eyes-of-a-child/">Look at life with the eyes of a child</a></h2>
+		<p class="item-excerpt global-excerpt">
+			Curabitur elementum nulla sapien, vel suscipit turpis convallis quis. Morbi sagittis non quam at aliquet. Suspendisse ut diam erat. Donec sed faucibus magna. Vestibulum eget erat ultrices.
+		</p>
+				<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/nichole/">Nichole Becker</a> & <a href="/author/daryl/">Daryl Wehner</a>
+	</div>
+</div>
+	</div>
+</article>
+	</div>
+</div><div class="pagination-section">
+	<a href="/page/2/" aria-label="Load more"></a>
+	<button class="global-button">Load more</button>
+</div>
+
+		<div class="special-section global-padding">
+	<small class="global-subtitle">You might also like</small>
+	<div class="special-wrap">
+		<article class="item is-special">
+	<a href="/we-are-stronger-as-a-group-than-an-individual/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1642698335353-c7866176c8ee_2.jpeg 300w, images/photo-1642698335353-c7866176c8ee_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1642698335353-c7866176c8ee_1.jpeg 300w, images/photo-1642698335353-c7866176c8ee.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1642698335353-c7866176c8ee.jpeg" loading="lazy" alt="We are stronger as a group than an individual">
+</picture>
+	</a>
+	<div class="item-content">
+		<h2 class="item-title"><a href="/we-are-stronger-as-a-group-than-an-individual/">We are stronger as a group than an individual</a></h2>
+		<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/damian/">Damian Erdman</a>
+	</div>
+</div>
+	</div>
+</article>
+		<article class="item is-special">
+	<a href="/every-day-in-every-city-and-town-across-the-country/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1600607686527-6fb886090705_2.jpeg 300w, images/photo-1600607686527-6fb886090705_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1600607686527-6fb886090705_1.jpeg 300w, images/photo-1600607686527-6fb886090705.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1600607686527-6fb886090705.jpeg" loading="lazy" alt="Every day, in every city and town across the country">
+</picture>
+	</a>
+	<div class="item-content">
+		<h2 class="item-title"><a href="/every-day-in-every-city-and-town-across-the-country/">Every day, in every city and town across the country</a></h2>
+		<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/damian/">Damian Erdman</a> & <a href="/author/breana/">Breana Flatley</a>
+	</div>
+</div>
+	</div>
+</article>
+		<article class="item is-special">
+	<a href="/i-believe-the-world-is-one-big-family/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1606787364410-947e10173148_2.jpeg 300w, images/photo-1606787364410-947e10173148_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1606787364410-947e10173148_1.jpeg 300w, images/photo-1606787364410-947e10173148.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1606787364410-947e10173148.jpeg" loading="lazy" alt="I believe the world is one big family">
+</picture>
+	</a>
+	<div class="item-content">
+		<h2 class="item-title"><a href="/i-believe-the-world-is-one-big-family/">I believe the world is one big family</a></h2>
+		<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/breana/">Breana Flatley</a>
+	</div>
+</div>
+	</div>
+</article>
+		<article class="item is-special">
+	<a href="/a-healthy-outside-starts-from-the-inside/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1559056390-e18db56c3d77_2.jpeg 300w, images/photo-1559056390-e18db56c3d77_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1559056390-e18db56c3d77_1.jpeg 300w, images/photo-1559056390-e18db56c3d77.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1559056390-e18db56c3d77.jpeg" loading="lazy" alt="A healthy outside starts from the inside">
+</picture>
+	</a>
+	<div class="item-content">
+		<h2 class="item-title"><a href="/a-healthy-outside-starts-from-the-inside/">A healthy outside starts from the inside</a></h2>
+		<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/daryl/">Daryl Wehner</a>
+	</div>
+</div>
+	</div>
+</article>
+		<article class="item is-special">
+	<a href="/i-have-my-own-definition-of-minimalism/" class="item-image global-image global-image-orientation global-radius">
+		<picture>
+	<source srcset="images/photo-1503810473512-f64b56827964_2.jpeg 300w, images/photo-1503810473512-f64b56827964_3.jpeg 600w" sizes="(max-width:480px) 300px, 600px" type="image/webp">
+	<img srcset="images/photo-1503810473512-f64b56827964_1.jpeg 300w, images/photo-1503810473512-f64b56827964.jpeg 600w" sizes="(max-width:480px) 300px, 600px" src="images/photo-1503810473512-f64b56827964.jpeg" loading="lazy" alt="I have my own definition of minimalism">
+</picture>
+	</a>
+	<div class="item-content">
+		<h2 class="item-title"><a href="/i-have-my-own-definition-of-minimalism/">I have my own definition of minimalism</a></h2>
+		<div class="global-meta">
+	<div class="global-meta-content">
+		by
+		<a href="/author/breana/">Breana Flatley</a>
+	</div>
+</div>
+	</div>
+</article>
+	</div>
+</div>
+				</main>
+				<footer class="footer-section global-footer">
+	<div class="global-padding">
+	<small class="subscribe-form-subtitle global-subtitle">Newsletter</small>
+	<div class="subscribe-form global-radius">
+		<div class="global-dynamic-color">
+			<h3 class="subscribe-title">Get all the latest posts delivered straight to your inbox.</h3>
+		</div>
+		<div class="subscribe-wrap">
+			<form data-members-form="subscribe" data-members-autoredirect="false">
+				<input data-members-email="" type="email" placeholder="Your email address" aria-label="Your email address" required="">
+				<button class="global-button no-color" type="submit">Subscribe</button>
+			</form>
+			<div class="subscribe-alert global-dynamic-color">
+				<span class="alert-loading global-alert">Processing your application</span>
+				<span class="alert-success global-alert">Please check your inbox and click the link to confirm your subscription.</span>
+				<span class="alert-error global-alert">There was an error sending the email</span>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="footer-wrap global-padding">
+		<div class="footer-content">
+			<div class="footer-logo-wrap">
+				<div class="global-logo is-footer">	<a href="https://reiro.fueko.net" class="is-logo"><img src="images/reiro.svg" alt="Reiro home"></a>
+</div>
+				<p class="footer-description">A minimal, functional theme for running a paid-membership publication on Ghost.</p>
+			</div>
+			<div class="footer-subscribe">
+	<a href="https://reiro.fueko.net/membership/" class="global-button">Become a subscriber →</a>
+	<small>Get all the latest posts delivered straight to your inbox.</small>
+</div>
+		</div>
+		<div class="footer-nav">
+			<div class="footer-nav-column is-social">
+				<small>Social</small>
+				<ul>
+					<li><a href="https://www.facebook.com/ghost" target="_blank" rel="noopener"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"></path></svg>Facebook</a></li>
+					<li><a href="https://twitter.com/fuekothemes" target="_blank" rel="noopener"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path></svg>X/Twitter</a></li>
+					
+
+ <li><a href="#" target="_blank" rel="noopener"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.168 0c-3.2 0-5.797 2.579-5.797 5.758v12.484C1.371 21.42 3.968 24 7.168 24c1.981 0 3.716-.978 4.768-2.479l.794.79c2.26 2.245 5.943 2.245 8.203 0a5.724 5.724 0 001.696-4.075 5.724 5.724 0 00-1.696-4.074l-2.182-2.168 2.182-2.156a5.724 5.724 0 001.696-4.074 5.724 5.724 0 00-1.696-4.074c-2.26-2.246-5.942-2.246-8.203 0l-.794.789A5.797 5.797 0 007.168 0Z"></path></svg>Kickstarter</a></li> 
+ <li><a href="#" target="_blank" rel="noopener"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197c1.185-1.044 2.351-2.084 3.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.434-5.757 6.762-5.637 2.473.06 3.628 1.664 3.493 4.797l-.013.01z"></path></svg>Vimeo</a></li> 
+				</ul>
+			</div>
+			
+
+
+
+
+<div class="footer-nav-column">
+	<small>About</small>
+	<ul>
+		<li><a href="https://reiro.fueko.net/style-guide/">Style Guide</a></li>
+		<li><a href="https://reiro.fueko.net/features/">Features</a></li>
+		<li><a href="https://reiro.fueko.net/contact/">Contact</a></li>
+		<li><a href="https://reiro.fueko.net/404/">404</a></li>
+	</ul>
+</div>
+
+<div class="footer-nav-column">
+	<small>Features</small>
+	<ul>
+		<li><a href="https://fueko.net/themes/reiro/">Demos</a></li>
+		<li><a href="https://reiro.fueko.net">Light version</a></li>
+		<li><a href="https://reiro-sepia.fueko.net">Sepia version</a></li>
+		<li><a href="https://reiro-dark.fueko.net">Dark version</a></li>
+	</ul>
+</div>
+
+<div class="footer-nav-column">
+	<small>Membership</small>
+	<ul>
+		<li><a href="https://reiro.fueko.net/featured/">Editor’s Choice</a></li>
+		<li><a href="https://reiro.fueko.net/membership/">Membership</a></li>
+		<li><a href="https://reiro.fueko.net/demo-account-member/">Account Free</a></li>
+		<li><a href="https://reiro.fueko.net/demo-account-paid-member/">Account Paid</a></li>
+	</ul>
+</div>
+
+<div class="footer-nav-column">
+	<small>Resources</small>
+	<ul>
+		<li><a href="https://reiro.fueko.net/signin/">Sign in</a></li>
+		<li><a href="https://reiro.fueko.net/signup/">Sign up</a></li>
+		<li><a href="https://reiro.fueko.net/tags/">Tags</a></li>
+		<li><a href="https://reiro.fueko.net/authors/">Authors</a></li>
+	</ul>
+</div>
+
+<div class="footer-nav-column">
+	<small>Company</small>
+	<ul>
+		<li><a href="https://fueko.net">fueko</a></li>
+		<li><a href="https://fueko.net/showcase/">Showcase</a></li>
+		<li><a href="https://themeforest.net/item/reiro-multipurpose-ghost-blog-theme/40287312">Get Theme</a></li>
+	</ul>
+</div>
+
+		</div>
+		<div class="footer-copyright">
+			� 2025 <a href="https://reiro.fueko.net">Reiro</a>.
+			Published with <a href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a> and <a href="https://fueko.net" target="_blank" rel="noopener">Reiro</a>.
+		</div>
+	</div>
+</footer>			</div>
+		</div>
+		<div id="notifications" class="global-notification">
+	<div class="subscribe">You’ve successfully subscribed to Reiro</div>
+	<div class="signin">Welcome back! You’ve successfully signed in.</div>
+	<div class="signup">Great! You’ve successfully signed up.</div>
+	<div class="update-email">Success! Your email is updated.</div>
+	<div class="expired">Your link has expired</div>
+	<div class="checkout-success">Success! Check your email for magic link to sign-in.</div>
+</div>
+				<script src="js/global.js"></script>
+		<script src="js/index.js"></script>
+		<script>
+!function(){"use strict";const p=new URLSearchParams(window.location.search),isAction=p.has("action"),isStripe=p.has("stripe"),success=p.get("success"),action=p.get("action"),stripe=p.get("stripe"),n=document.getElementById("notifications"),a="is-subscribe",b="is-signin",c="is-signup",f="is-update-email",d="is-expired",e="is-checkout-success";p&&(isAction&&(action=="subscribe"&&success=="true"&&n.classList.add(a),action=="signup-paid"&&success=="true"&&n.classList.add(a),action=="signin"&&success=="true"&&n.classList.add(b),action=="signup"&&success=="true"&&n.classList.add(c),action=="updateEmail"&&success=="true"&&n.classList.add(f),success=="false"&&n.classList.add(d)),isStripe&&stripe=="success"&&n.classList.add(e),(isAction||isStripe)&&setTimeout(function(){window.history.replaceState(null,null,window.location.pathname),n.classList.remove(a,b,c,d,e,f)},5000))}();
+</script>
+
+		<script>window.addEventListener("load",function(){var e=Array.prototype.slice.call(window.getComputedStyle(document.documentElement,"")).join("").match(/-(moz|webkit|ms)-/)[1];if(console.log(e),"moz"===e){const e=document.querySelector("input[data-members-email]");if(e){e.addEventListener("keyup",function(e,t){let s;return(...o)=>{clearTimeout(s),s=setTimeout(function(){e.apply(this,o)},t)}}(()=>{const t=e.value;function s(e){return/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)}if(console.log(s(t)),!0===s(t)){const e=document.querySelector("form button");e.disabled=!0,new Promise((e,s)=>{console.log(t);const o=JSON.stringify({email:t}),n=new XMLHttpRequest;n.addEventListener("readystatechange",function(){this.readyState===this.DONE&&(console.log(this.responseText),'{"status":"valid"}'===this.responseText?e():'{"status":"role"}'===this.responseText?e():s())}),n.open("POST","https://app.mailercheck.com/api/v1/check/single"),n.setRequestHeader("content-type","application/json"),n.setRequestHeader("authorization","Bearer adeea5d5-f96f-4eb9-8a29-fb6972d7189f"),n.send(o)}).then(t=>{e.disabled=!1}).catch(e=>{})}},800))}}else{const e=document.querySelector("form[data-members-form]");if(e){const s=document.querySelector("form[data-members-form] button");var t=s.cloneNode(!0);t.classList.add("button-clone"),s.before(t),s.setAttribute("style","display:none"),s.disabled=!0,t.addEventListener("click",function(){const o=document.querySelector("input[data-members-name]"),n=document.querySelector("input[data-members-email]");if(o)if(""==o.value||""==n.value);else{const e=n.value;function a(e){return/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)}if(console.log(a(e)),!0===a(e)){t.classList.add("button-valid");var i=document.querySelector(".button-valid")}}if(!o)if(""==n.value);else{const e=n.value;function a(e){return/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)}if(console.log(a(e)),!0===a(e)){t.classList.add("button-valid");i=document.querySelector(".button-valid")}}if(i){e.classList.add("loading"),e.classList.remove("error"),(t.disabled=!0,new Promise((s,o)=>{const a=n.value;console.log("Email validation:"),console.log(a);const i=JSON.stringify({email:a}),l=new XMLHttpRequest;l.addEventListener("readystatechange",function(){if(this.readyState===this.DONE)if(console.log(this.responseText),'{"status":"valid"}'===this.responseText||'{"status":"role"}'===this.responseText){const e=console.log("Email is valid :)");s(e)}else{e.classList.remove("loading"),e.classList.add("error"),t.disabled=!1;const s=console.log("Email is not valid!");o(s)}}),l.open("POST","https://app.mailercheck.com/api/v1/check/single"),l.setRequestHeader("content-type","application/json"),l.setRequestHeader("authorization","Bearer adeea5d5-f96f-4eb9-8a29-fb6972d7189f"),l.send(i)})).then(e=>{s.disabled=!1,s.click(),console.log("The form was sent")})}})}}});</script>
+<script>!function(){window.onscroll=(event)=>{let a=document.createElement("a");a.innerHTML="See all Themes \u2192",a.setAttribute("class","is-banner"),a.href="https://fueko.net/themes/",a.target="_blank",a.rel="noopener",document.body.appendChild(a),window.onscroll=function(a){n=document.body,window.innerHeight+window.scrollY>=document.body.offsetHeight?n.classList.add("is-scroll-banner"):n.classList.remove("is-scroll-banner")}}}();</script>
+	
+</body></html>
